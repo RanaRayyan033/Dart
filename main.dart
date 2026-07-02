@@ -26,7 +26,8 @@ void main(){
     num = num%2;
     print(num);
 }
+
+
+
 */
 
-final fullname = 'Ada lovelace';
-print (fullname.split(' ')[0]);
