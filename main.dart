@@ -31,3 +31,17 @@ void main(){
 
 */
 
+import 'dart:io';
+void main() {
+stdout.write('a: ');
+final a = double.parse(stdin.readLineSync()!);
+stdout.write('op (+ - * /): ');
+final op = stdin.readLineSync();
+stdout.write('b: ');
+final b = double.parse(stdin.readLineSync()!);
+final r = op == '+' ? a + b
+: op == '-' ? a - b
+: op == '*' ? a * b : a / b;
+print('$a $op $b = $r');
+}
+
